@@ -3,140 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Description Page</title>
+    <title>Advanced Product Description Page</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <!-- Custom Script -->
-    <script src="js/script.js"></script>
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">MyBrand</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<body style="font-family: 'Roboto', sans-serif;">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MyBrand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <button class="btn btn-outline-light ml-3"><i class="fas fa-shopping-cart"></i> Cart</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Your Perfect Product</h1>
+        <p class="lead">Discover the best features and unbeatable value.</p>
+        <a href="#features" class="btn btn-light btn-lg">Learn More</a>
+    </header>
+
 
 <!-- Product Image Carousel -->
-<div id="productCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/product1.jpg" class="d-block w-100 img-fluid" alt="Product Image 1">
-        </div>
-        <div class="carousel-item">
-            <img src="img/product2.jpg" class="d-block w-100 img-fluid" alt="Product Image 2">
-        </div>
-        <div class="carousel-item">
-            <img src="img/product3.jpg" class="d-block w-100 img-fluid" alt="Product Image 3">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-  
-<!-- Product Details Section -->
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6">
-            <h2>Product Name</h2>
-            <p class="text-muted">Tagline for the product</p>
-            <h4>$199.99</h4>
-        </div>
-        <div class="col-md-6">
-            <h4>Key Features</h4>
-            <ul>
-                <li>Feature 1</li>
-                <li>Feature 2</li>
-                <li>Feature 3</li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-  
-<!-- Accordion Section -->
-<div class="container mt-5">
-    <div class="accordion" id="accordionExample">
-        <!-- Product Description Card -->
-        <div class="card">
-            <div class="card-header" id="headingOne">
-                <h2 class="mb-0">
-                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Product Description
-                    </button>
-                </h2>
+<section id="home" class="text-center">
+    <div id="productCarousel" class="carousel slide container" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#productCarousel" data-slide-to="1"></li>
+            <li data-target="#productCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/product1.jpg" class="d-block w-100" alt="Product 1">
+                <div class="carousel-caption">
+                    <h5>Elegant Design</h5>
+                </div>
             </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    This is the detailed product description. Add your product's description here.
+            <div class="carousel-item">
+                <img src="img/product2.jpg" class="d-block w-100" alt="Product 2">
+                <div class="carousel-caption">
+                    <h5>Durable Build</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/product3.jpg" class="d-block w-100" alt="Product 3">
+                <div class="carousel-caption">
+                    <h5>Top-notch Performance</h5>
                 </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
 
-        <!-- Technical Specifications Card -->
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Technical Specifications
-                    </button>
-                </h2>
+    <!-- Product Details Section -->
+<section id="details">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Product Name</h2>
+                <p class="text-muted">A modern solution to your needs.</p>
+                <h4 class="text-success">$199.99</h4>
+                <button class="btn btn-custom btn-lg mt-3">Buy Now</button>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    - Specification 1 <br>
-                    - Specification 2 <br>
-                    - Specification 3 <br>
+            <div class="col-lg-6">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>High durability</li>
+                    <li>Advanced technology</li>
+                    <li>Eco-friendly materials</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Video Section -->
+    <div class="container mt-5 text-center">
+        <h3 class="mb-4">Watch the Product in Action</h3>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Reviews Section -->
+    <div id="reviews" class="container mt-5">
+        <h3>Customer Reviews</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">John D.</h5>
+                        <p class="card-text">Amazing product! Exceeded all my expectations. Highly recommend!</p>
+                        <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sarah P.</h5>
+                        <p class="card-text">Worth every penny. Incredible quality!</p>
+                        <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Alex K.</h5>
+                        <p class="card-text">Good value for money, but delivery took longer than expected.</p>
+                        <p class="text-warning"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-  
-  
-</body>
+    <!-- FAQ Section -->
+    <div class="container mt-5">
+        <h3>Frequently Asked Questions</h3>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link text-primary" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            How does this product work?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Our product is equipped with the latest technology to make your life easier. Refer to the manual for detailed instructions.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-primary" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            What is the warranty policy?
+                        </button>
+                    </h2>
+                </div>
+                <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        We offer a 1-year warranty on this product. Contact our support team for claims.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- Footer Section -->
-<footer class="bg-dark text-white text-center py-3 mt-5">
-    <p>&copy; 2025 MyBrand | Follow us on:
-        <a href="#" class="text-white ml-2">Facebook</a>
-        <a href="#" class="text-white ml-2">Instagram</a>
-        <a href="#" class="text-white ml-2">Twitter</a>
-    </p>
+<footer>
+    <div class="container text-center">
+        <p>&copy; 2025 SmartShop | Follow us on:</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
 </footer>
-<!-- Update the footer with icons -->
-<p>&copy; 2025 MyBrand | Follow us on:
-    <a href="#" class="text-white ml-2"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
-    <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
-</p>
 
+   <!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Smooth scroll for navigation
+    $('a.nav-link').on('click', function(e) {
+        e.preventDefault();
+        const target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 800);
+        $('.nav-link').removeClass('active-link');
+        $(this).addClass('active-link');
+    });
+
+    // Change navbar background on scroll
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    });
+</script>
+
+</body>
 </html>

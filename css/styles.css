@@ -1,22 +1,72 @@
-/* Custom styles for better layout and font size */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f9fa;
 }
 
-.carousel-item img {
-    max-height: 400px; /* Adjusting image size in the carousel */
-    object-fit: cover;  /* Ensures image doesn’t stretch */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s;
 }
 
-h2, h3, h4 {
-    font-weight: 600;
+.navbar.scrolled {
+    background: #343a40 !important;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
+.carousel img {
+    border-radius: 10px;
 }
 
-ul li {
-    padding: 5px;
+.btn-custom {
+    background: teal;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #005f5f;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fff;
+}
+
+footer {
+    background: linear-gradient(to right, #343a40, #005f5f);
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #00bcd4;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+}
+
+section {
+    padding: 50px 0;
+}
+
+.active-link {
+    color: teal !important;
+    font-weight: bold;
 }
