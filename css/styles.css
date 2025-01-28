@@ -4,6 +4,9 @@ body {
     background: #f8f9fa;
 }
 
+.bg-primary {
+    background-color: #005f5f !important; /* Use your desired color */
+}
 .navbar {
     position: sticky;
     top: 0;
