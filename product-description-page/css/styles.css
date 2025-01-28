@@ -1,0 +1,22 @@
+/* Custom styles for better layout and font size */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-item img {
+    max-height: 400px; /* Adjusting image size in the carousel */
+    object-fit: cover;  /* Ensures image doesn’t stretch */
+}
+
+h2, h3, h4 {
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px;
+}
